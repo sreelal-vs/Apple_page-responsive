@@ -1,0 +1,20 @@
+@font-face
+ {
+    font-family: "sf pro semibold";
+    src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_semibold.woff2");
+ }
+ @font-face
+ {
+    font-family: "sf pro regular";
+    src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_regular.woff2");
+ }
+ @font-face
+ {
+    font-family: "sf pro medium";
+    src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_medium.woff2");
+ }
+ @font-face
+ {
+    font-family: "sf pro icon";
+    src: url("https://www.apple.com/wss/fonts/SF-Pro-Icons/v3/sf-pro-icons_regular.woff2");
+ }
