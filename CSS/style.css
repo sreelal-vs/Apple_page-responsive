@@ -200,3 +200,12 @@
   padding: 10px !important;
 
 }
+.lgsection hr
+{
+  border-top-width: 0.5px;
+}
+.contact-info
+{
+  font-family: "sf pro regular";
+  font-size: 12px;
+}
