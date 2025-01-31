@@ -8,43 +8,597 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="icon" href="https://www.apple.com/favicon.ico">
+    <link rel="stylesheet" href="/wss/fonts?families=SF+Pro,v3|SF+Pro+Icons,v3" type="text/css" media="all">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand d-block d-lg-none" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+              <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+              <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            </svg>
+          </a>
+          <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse py-1" id="navbarText">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 column-gap-3 column-gap-xl-4">
+              <li class="nav-item d-none d-lg-block">
+                <a href="#" class="nav-link ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                      </svg>
+                </a>
                 
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link "  href="#">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mac</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">iPad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">iPhone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Watch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">AirPods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">TV & Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Entertainement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Accessories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex justify-content-center align-items-center text-center">
+        <p class="m-0">Get up to ₹10000.00 instant cashback with eligible cards.* Plus up to 12 months of No Cost EMI.‡ </p>
+        <a class="text-decoration-none" href="#">Shop></a>
+      </div>  
+    </header>  
+    <main>
+      <!-- SECTION 1 -->
+      <section class="section1">
+        <div class="valday position-relative" >
+            <picture>
+            <source media="(max-width:1008px )" srcset="https://www.apple.com/v/home/ca/images/heroes/valentines-day-2025/hero_valentines_day_2025_announce__fpr9nyudirm2_medium_2x.png">
+            <source media="(max-width:734px)" srcset="https://www.apple.com/v/home/ca/images/heroes/valentines-day-2025/hero_valentines_day_2025_announce__fpr9nyudirm2_small_2x.png">
+            <img src="https://www.apple.com/v/home/ca/images/heroes/valentines-day-2025/hero_valentines_day_2025_announce__fpr9nyudirm2_large_2x.png" alt="">
+          </picture>
+          <div class="valday-wrap align-items-center d-flex flex-column position-absolute w-100 h-100">
+            <h2 class="headline text-center">Valentine’s Day</h2>
+            <p class="subhead text-center">Find something special for your&nbsp;special&nbsp;someone.</p>
+            <a href="#" class="btn btn-primary rounded-pill">Shop</a>
+          </div>
+        </div>
+        
+      </section>
+      <!-- SECTION 2 -->
+      <section class="new_phone_section mt-3">
+        <div class="position-relative">
+          <picture>
+            <source media="(max-width:740px )" srcset="https://www.apple.com/in/home/heroes/iphone-16-pro/images/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg">
+            <img src="https://www.apple.com/in/home/heroes/iphone-16-pro/images/hero_iphone16pro_avail__fnf0f9x70jiy_large_2x.jpg" alt="iphone-16-pro" width="100%">
+          </picture>
+          <div class="position-absolute w-100 h-100 text-center d-flex flex-column justify-content-between aboutphone">
+            <div class="text-light">
+              <p class="m-0 phone_name">iPhone 16 Pro</p>
+              <span>Built for Apple Intelligence</span>
+            </div>
+            <div class="more">
+              <div class="d-flex justify-content-center column-gap-3">
+                <a href="#" class="btn btn-primary rounded-5 px-4 py-2">Learn more</a>
+                <a href="#" class="btn btn-outline-primary rounded-5 px-4 py-2">Buy</a>
+              </div>
+              <p class="mb-0 mt-3">Apple Intelligence available now in US English</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- SECTION 3 -->
+      <section class="new_phone_section mt-3">
+        <div class="position-relative">
+          <picture>
+            <source media="(max-width:740px )" srcset="https://www.apple.com/in/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_small_2x.jpg">
+            <img src="https://www.apple.com/in/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_medium_2x.jpg" alt="iphone-16-pro" width="100%">
+          </picture>
+          <div class="position-absolute w-100 h-100 text-center d-flex flex-column justify-content-between aboutphone">
+            <div class="text-light">
+              <p class="m-0 phone_name">iPhone 16</p>
+              <span>Built for Apple Intelligence</span>
+            </div>
+            <div class="more">
+              <div class="d-flex justify-content-center column-gap-3">
+                <a href="#" class="btn btn-primary rounded-5 px-4 py-2">Learn more</a>
+                <a href="#" class="btn btn-outline-primary rounded-5 px-4 py-2">Buy</a>
+              </div>
+              <p class="mb-0 mt-3">Apple Intelligence available now in US English</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- SECTION 3 -->
+       <section class=" container-fluid p-0  mt-3">
+         <div class="row p-0 m-0">
+          <!-- PIC 1 -->
+           <div class=" col-12 col-lg-6  px-0 px-lg-2">
+             <div class="picturewrap position-relative">
+               <picture>
+                
+                <source media="(max-width:992px )" srcset="https://www.apple.com/v/home/ca/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail__b9etp10v9tn6_small_2x.jpg">
+                <img src="https://www.apple.com/v/home/ca/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail__b9etp10v9tn6_large_2x.jpg" alt="apple-watch-series-10" width="100%" height="100%" class="object-fit-cover ">
+               </picture>
+               <div class="about-wrap position-absolute top-0 h-100 w-100 text-center ">
+                  <div>
+                    <img src="https://www.apple.com/v/home/ca/images/logos/apple-watch-series-10/promo_logo_apple_watch_series_10__qk5vaa89vnm2_small_2x.png" width="148px" alt="logos">
+                    <p class="mt-3 ">Thinstant classic</p>
+                  </div>
+                  <div class="d-flex justify-content-center column-gap-3">
+                    <a href="#" class="btn btn-primary rounded-5 px-4 py-2">Learn more</a>
+                    <a href="#" class="btn btn-outline-primary rounded-5 px-4 py-2">Buy</a>
+                  </div>
+               </div>
+             </div>
+           </div>
+          <!-- PIC 2 -->
 
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
-                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
-                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
-                          </svg>
-                    </a>
-                    
-                  </li>  
-                  <li class="nav-item">
-                    <a class="nav-link"  href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">Disabled</a>
-                  </li>
-                </ul>
+           <div class=" col-12 col-lg-6 ps-lg-0 px-0 px-lg-2">
+            <div class="picturewrap position-relative">
+              <picture>
+               <source media="(max-width:992px )" srcset="https://www.apple.com/v/home/ca/images/promos/apple-watch-unity/promo_apple_watch_unity__casvx9ysh1le_small_2x.jpg">
+               <img src="https://www.apple.com/v/home/ca/images/promos/apple-watch-unity/promo_apple_watch_unity__casvx9ysh1le_medium_2x.jpg" width="100%" height="100%" class="object-fit-cover">
+              </picture>
+              <div class="about-wrap position-absolute top-0 h-100 w-100 text-center">
+                <div>
+                  <img src="https://www.apple.com/v/home/ca/images/logos/apple-watch-unity/promo_logo_apple_watch_unity__gnsimjrnf8a6_large_2x.png" width="148px" alt="logos">
+                  <p class="text-center text-light pt-3">United by rhythm. Discover the new <br> Black Unity watch strap and face.</p>
+                </div>
+                <div class="d-flex justify-content-center column-gap-3">
+                  
+                  <a href="#" class="btn btn-light rounded-5 px-4 py-2">Buy</a>
+                </div>
+             </div>
+            </div>
+          </div>
+          <!-- PIC 3 -->
+
+          <div class=" col-12 col-lg-6  pt-2  px-0 px-lg-2">
+            <div class="picturewrap position-relative">
+              <picture>
+               <source media="(max-width:992px )" srcset="https://www.apple.com/in/home/promos/ipad-pro/images/promo_ipadpro_avail__s271j89g8kii_small_2x.jpg">
+               <img src="https://www.apple.com/in/home/promos/ipad-pro/images/promo_ipadpro_avail__s271j89g8kii_large_2x.jpg" alt="apple-watch-series-10" width="100%" height="100%" class="object-fit-cover">
+              </picture>
+              <div class="about-wrap position-absolute top-0 h-100 w-100 text-center text-light ">
+                <div>
+                  <div>
+                    <span class="fs-1 fw-bolder">iPad Pro</span>
+                    <p class="mt-3 ">Unbelievably thin. Incredibly powerful.</p>
+                  </div>
+                  <div class="d-flex justify-content-center column-gap-3">
+                    <a href="#" class="btn btn-primary rounded-5 px-4 py-2">Learn more</a>
+                    <a href="#" class="btn btn-outline-primary rounded-5 px-4 py-2">Buy</a>
+                  </div>
+                </div>
+                
+             </div>
+            </div>
+          </div>
+          <!-- PIC 4 -->
+
+          <div class=" col-12 col-lg-6 ps-lg-0  pt-2 px-0 px-lg-2">
+           <div class="picturewrap position-relative">
+             <picture>
+              <source media="(max-width:992px )" srcset="https://www.apple.com/v/home/ca/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_small_2x.jpg">
+              <img src="https://www.apple.com/v/home/ca/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_medium_2x.jpg" alt="apple-watch-series-10" width="100%" height="100%" class="object-fit-cover">
+             </picture>
+             <div class="about-wrap position-absolute top-0 h-100 w-100 text-center ">
+              <div>
+                <span class="fs-1 fw-bolder">MacBook Air</span>
+                <p class="mt-3 ">Supercharged by M3</p>
+              </div>
+              <div class="d-flex justify-content-center column-gap-3">
+                <a href="#" class="btn btn-primary rounded-5 px-4 py-2">Learn more</a>
+                <a href="#" class="btn btn-outline-primary rounded-5 px-4 py-2">Buy</a>
+              </div>
+           </div>
+           </div>
+         </div>
+          <!-- PIC 5 -->
+
+         <div class=" col-12 col-lg-6  pt-2 px-0 px-lg-2">
+          <div class="picturewrap position-relative">
+            <picture>
+             <source media="(max-width:992px )" srcset="https://www.apple.com/v/home/ca/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_small_2x.jpg">
+             <img src="https://www.apple.com/v/home/ca/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_medium_2x.jpg" alt="apple-watch-series-10" width="100%" height="100%" class="object-fit-cover">
+            </picture>
+            <div class="d-flex flex-column justify-content-end about-wrap position-absolute top-0 h-100 w-100 text-center text-light ">
+              <div>
+                <span class="fs-1 fw-bolder">AirPods 4</span>
+                <p class="mt-3 ">
+                  Iconic. Now supersonic. <br> Available with Active Noise Cancellation.</p>
+              </div>
+              <div class="d-flex justify-content-center column-gap-3">
+                <a href="#" class="btn btn-primary rounded-5 px-4 py-2">Learn more</a>
+                <a href="#" class="btn btn-outline-primary rounded-5 px-4 py-2">Buy</a>
+              </div>
+           </div>
+          </div>
+        </div>
+          <!-- PIC 6 -->
+
+        <div class=" col-12 col-lg-6 ps-lg-0 pt-2   px-0 px-lg-2">
+         <div class="picturewrap position-relative">
+           <picture>
+            <source media="(max-width:992px )" srcset="https://www.apple.com/v/home/ca/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_small_2x.jpg">
+            <img src="https://www.apple.com/v/home/ca/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_medium_2x.jpg" width="100%" height="100%" class="object-fit-cover">
+           </picture>
+           <div class="about-wrap position-absolute top-0 h-100 w-100 text-center ">
+            <div>
+              <img src="https://www.apple.com/v/home/ca/images/logos/iphone-tradein/promo_logo_iphone_tradein__7y3gtai5az66_large_2x.png" width="148px" alt="logos">
+              <p class="mt-3 ">Upgrade and save. It’s that easy.</p>
+            </div>
+            <div class="d-flex justify-content-center column-gap-3">
+              <a href="#" class="btn btn-primary rounded-5 px-4 py-2">Get your estimate</a>
+            </div>
+         </div>
+         </div>
+       </div>
+         </div>
+       </section>
+    </main>
+    <footer>
+      <div class="footer-wrap">
+        <section>
+          <ul class="list-unstyled">
+            <li class="pb-2">*Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies.  here to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice.Additional terms apply. Instant cashback is not available to Business customers and cannot be combined with Apple&nbsp;Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback.</li>
+            <li  class="pb-2">‡No Cost EMI is available with the purchase of an eligible product</a> made using qualifying cards on 3-, 6-, 9- or 12-month tenures from most leading card issuers. Eligible AirPods, HomePod and Beats products are excluded from No Cost EMI on 9- and 12-month tenures. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions. Minimum order spend applies as per your card issuer’s threshold. No Cost EMI is not available to Business customers and cannot be combined with Apple&nbsp;Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. Terms&nbsp;Apply.</li>
+            <li  class="pb-2">Representative example: Based on a 12-month tenure. ₹79900.00 total cost includes 15.99% p.a. and No Cost EMI savings of ₹6514.00, paid over 12 months as 12 monthly payments of ₹6658.00.</li>
+            <li class="pb-2">1. Apple Intelligence is available in beta on all iPhone 16 models, iPhone&nbsp;15&nbsp;Pro, iPhone&nbsp;15&nbsp;Pro&nbsp;Max, iPad mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and&nbsp;device language set to English (Australia, Canada, Ireland, New Zealand, South&nbsp;Africa, UK or US), as part of an iOS 18, iPadOS 18 and macOS Sequoia software update. Additional features and languages will be available in April, with more languages coming over the course of&nbsp;the&nbsp;year. Languages supported in 2025 include Chinese, English (India, Singapore), French, German, Italian, Japanese, Korean, Portuguese, Spanish and Vietnamese.</li>
+            <li class="pb-2">2. Available in two models: AirPods&nbsp;4 and AirPods&nbsp;4 with Active Noise Cancellation. </li>
+            <li class="pb-2">A subscription is required for Apple&nbsp;TV+.</li>
+            <li class="pb-2">Features are subject to change. Some features, applications and services may not be available in all regions or all&nbsp;languages.</li>
+        </ul>
+        <hr>
+        </section>
+        <section class="p-0 d-none d-md-flex justify-content-between list_">
+          <div>
+            <dl>
+              <dt>
+                <p>Shop and Learn</p>
+              </dt>
+              <dd>Store</dd>
+              <dd>Mac</dd>
+              <dd>iPad</dd>
+              <dd>iPhone</dd>
+              <dd>Watch</dd>
+              <dd>AirPods</dd>
+              <dd>TV & Home</dd>
+              <dd>AirTag</dd>
+              <dd>Accessories</dd>
+              <dd>Gift Cards</dd>
+            </dl>
+            <dl>
+              <dt>
+                <p>Apple Wallet</p>
+              </dt>
+              <dd>Wallet</dd>
+            </dl>
+          </div>
+          <div>
+            <dl>
+              <dt>
+                <p>Account</p>
+              </dt>
+              <dd>Manage Your Apple Account</dd>
+              <dd>Apple Store Account</dd>
+              <dd>iCloud.com</dd>
+            </dl>
+            <dl>
+              <dt>
+                <p>Entertainment</p>
+              </dt>
+              <dd>Apple One</dd>
+              <dd>Apple TV+</dd>
+              <dd>Apple Music</dd>
+              <dd>Apple Arcade</dd>
+              <dd>Apple Podcasts</dd>
+              <dd>Apple Books</dd>
+              <dd>App Store</dd>
+            </dl>
+          </div>
+          <div>
+            <dl>
+              <dt>
+                <p>Apple Store</p>
+              </dt>
+              <dd>Find a Store</dd>
+              <dd>Genius Bar</dd>
+              <dd>Today at Apple</dd>
+              <dd>Group Reservations</dd>
+              <dd>Apple Camp</dd>
+              <dd>Apple Trade In</dd>
+              <dd>Ways to Buy</dd>
+              <dd>Recycling Programme</dd>
+              <dd>Order Status</dd>
+              <dd>Shopping Help</dd>
+            </dl>
+           
+          </div>
+          <div>
+            <dl>
+              <dt>
+                <p>For Business</p>
+              </dt>
+              <dd>Apple and Business</dd>
+              <dd>Shop for Business</dd>
+            </dl>
+            <dl>
+              <dt>
+                <p>For Education</p>
+              </dt>
+              <dd>Apple and Education</dd>
+              <dd>Shop for Education</dd>
+              <dd>Shop for University</dd>
+            </dl>
+            <dl>
+              <dt>
+                <p>For Healthcare</p>
+              </dt>
+              <dd>Apple in Healthcare</dd>
+              <dd>Mac in Healthcare</dd>
+              <dd>Health on Apple Watch</dd>
+            </dl>
+          </div>
+          <div>
+            <dl>
+              <dt>
+                <p>Apple Values</p>
+              </dt>
+              <dd>Accessibility</dd>
+              <dd>Education</dd>
+              <dd>Environment</dd>
+              <dd>Privacy</dd>
+              <dd>Supply Chain</dd>
+            </dl>
+            <dl>
+              <dt>
+                <p>About Apple</p>
+              </dt>
+              <dd>Newsroom</dd>
+              <dd>Apple Leadership</dd>
+              <dd>Career Opportunities</dd>
+              <dd>Investors</dd>
+              <dd>Ethics & Compliance</dd>
+              <dd>Events</dd>
+              <dd>Contact Apple</dd>
+            </dl>
+          </div>
+        </section>
+        <!-- MAX lg SECTION -->
+        <section class="p-0">
+          <div class="accordion accordion-flush d-block d-lg-none" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Shop and Learn
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Store</dd>
+                    <dd>Mac</dd>
+                    <dd>iPad</dd>
+                    <dd>iPhone</dd>
+                    <dd>Watch</dd>
+                    <dd>AirPods</dd>
+                    <dd>TV & Home</dd>
+                    <dd>AirTag</dd>
+                    <dd>Accessories</dd>
+                    <dd>Gift Cards</dd>
+                  </dl>
+                </div>
               </div>
             </div>
-          </nav>
-    </header>  
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Apple Wallet
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Wallet</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Account
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Manage Your Apple Account</dd>
+                    <dd>Apple Store Account</dd>
+                     <dd>iCloud.com</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Entertainment
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Apple One</dd>
+                    <dd>Apple TV+</dd>
+                    <dd>Apple Music</dd>
+                    <dd>Apple Arcade</dd>
+                    <dd>Apple Podcasts</dd>
+                    <dd>Apple Books</dd>
+                    <dd>App Store</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Apple Store
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Find a Store</dd>
+                    <dd>Genius Bar</dd>
+                    <dd>Today at Apple</dd>
+                    <dd>Group Reservations</dd>
+                    <dd>Apple Camp</dd>
+                    <dd>Apple Trade In</dd>
+                    <dd>Ways to Buy</dd>
+                    <dd>Recycling Programme</dd>
+                    <dd>Order Status</dd>
+                    <dd>Shopping Help</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  For Business
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Apple and Business</dd>
+                    <dd>Shop for Business</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                  For Education
+                </button>
+              </h2>
+              <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Apple and Education</dd>
+                    <dd>Shop for Education</dd>
+                    <dd>Shop for University</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                  For Healthcare
+                </button>
+              </h2>
+              <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Apple in Healthcare</dd>
+                    <dd>Mac in Healthcare</dd>
+                    <dd>Health on Apple Watch</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                  Apple Values
+                </button>
+              </h2>
+              <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Accessibility</dd>
+                    <dd>Education</dd>
+                    <dd>Environment</dd>
+                    <dd>Privacy</dd>
+                    <dd>Supply Chain</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed py-2 ps-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                  About Apple
+                </button>
+              </h2>
+              <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <dl>
+                    <dd>Newsroom</dd>
+                    <dd>Apple Leadership</dd>
+                    <dd>Career Opportunities</dd>
+                    <dd>Investors</dd>
+                    <dd>Ethics & Compliance</dd>
+                    <dd>Events</dd>
+                    <dd>Contact Apple</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <hr class="m-0">
+        </section>
+        <section>fdsfs</section>
+      </div>
+    </footer>
 </body>
 </html>

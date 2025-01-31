@@ -1,20 +1,202 @@
-@font-face
- {
-    font-family: "sf pro semibold";
-    src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_semibold.woff2");
- }
+
  @font-face
  {
     font-family: "sf pro regular";
-    src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_regular.woff2");
+    src: url("/Font/sf-pro-text_regular.woff2");
  }
  @font-face
  {
     font-family: "sf pro medium";
-    src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_medium.woff2");
+    src: url("/Font/sf-pro-text_medium.woff2");
  }
  @font-face
  {
     font-family: "sf pro icon";
-    src: url("https://www.apple.com/wss/fonts/SF-Pro-Icons/v3/sf-pro-icons_regular.woff2");
+    src: url("/Font/sf-pro-icons_regular.woff2");
  }
+ @font-face
+ {
+    font-family: "sf display bold";
+    src: url("/Font/sf-pro-display_bold.woff2");
+ }
+ @font-face
+ {
+    font-family: "sf display regular";
+    src: url("/Font/sf-pro-display_regular.woff2");
+ }
+ .nav-item .nav-link
+ {
+   font-family: "sf pro regular";
+
+
+   font-size: 12px;
+   font-weight: 500;
+   color: rgb(29, 29, 31);
+ }
+ .navbar
+ {
+   background-color: rgba(245, 245, 247, 0.8);
+ }
+ header div
+ {
+   padding: 12px 0px;
+   font-family: "sf pro regular";
+   color: rgb(33, 37, 41);
+   font-size: 13px;
+   font-weight: 500;
+ }
+ .section1 picture img,.section1 .valday
+ {
+   height: 580px !important;
+   max-width: 3008px;
+   width: 100%;
+   object-fit: cover;
+   
+ }
+ @media (max-width:740px)
+ {
+  .navbar
+  {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+  }
+  .aboutphone .phone_name,.valday-wrap .headline
+  {
+    font-size: 38px !important;
+    
+  }
+  .valday-wrap .subhead,.aboutphone span
+  {
+    font-size: 18px !important;
+    
+  }
+  .new_phone_section picture img,.picturewrap
+  {
+  height: 500px !important;
+  }
+  
+  
+ }
+ .valday-wrap
+ {
+   top: 0px;
+   padding: 47px 0px;
+   justify-content: flex-end;
+
+ }
+ .valday-wrap .headline
+ {
+   font-size: 56px;
+   font-weight: 600;
+   font-family: "sf display bold";
+ }
+ .valday-wrap .subhead
+{
+   font-size: 28px;
+   font-family: "sf pro medium";
+   font-weight: 400;
+}
+.valday-wrap a
+{
+  width:80px;
+  height: 40px;
+}
+.new_phone_section picture img
+{
+  height: 580px;
+  object-fit: cover;
+}
+.new_phone_section div .aboutphone
+{
+  top: 0px;
+  font-family: "sf display bold";
+  padding: 35px 0px;
+}
+.aboutphone .phone_name
+{ 
+  font-size: 56px;
+  line-height: 60px;
+}
+.aboutphone span
+{
+  font-family: "sf display regular";
+  font-size: 28px;
+}
+.aboutphone .more p
+{
+  font-size: 14px;
+  font-family: "sf display regular";
+  color: rgb(134, 134, 139);
+}
+.picturewrap
+{
+  height: 580px;
+  
+}
+.about-wrap
+{
+  font-family: "sf display regular";
+  font-size: 21px;
+  line-height: 25px;
+  padding: 40px 0px;
+}
+.footer-wrap 
+{
+  max-width: 980px;
+  width: 100%;
+  padding: 0 22px;
+  margin:0 auto;
+}
+.footer-wrap section
+{
+  padding: 15px 0;
+}
+.footer-wrap section ul
+{
+  font-family: "sf pro regular";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.56);
+}
+.list_ div dl dd
+{
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 12px;
+  font-family: "sf pro regular";
+  margin-bottom: 9px;
+}
+.list_ div dl dt p
+{
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "sf pro regular";
+  margin-bottom: 9px;
+
+}
+.accordion-button:focus
+{
+  box-shadow: none !important;
+}
+.accordion-button
+{
+  font-family: "sf pro regular";
+  font-size: 12px !important;
+}
+.accordion-button::after
+{
+  background-size: 15px 20px !important;
+}
+.accordion-body dl dd
+{
+  color: rgba(0, 0, 0, 0.72);
+  font-family: "sf pro regular";
+  font-size: 12px;
+  padding: 0px;
+}
+.accordion-body
+{
+  padding: 10px !important;
+
+}
